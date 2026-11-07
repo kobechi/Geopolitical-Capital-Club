@@ -1,0 +1,40 @@
+.section-copy {
+  max-width: 880px;
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.small-copy {
+  max-width: 780px;
+}
+
+.narrow-shell .page-intro {
+  padding-bottom: 1rem;
+}
+
+.role-card,
+.track-card,
+.info-panel,
+.info-card,
+.faq-box,
+.meta-box,
+.cta-box,
+.callout-box,
+.team-leads-panel,
+.board-wrapper {
+  contain: layout paint;
+}
+
+.nav-button {
+  justify-self: flex-end;
+}
+
+.board-wrapper {
+  min-height: 100%;
+}
+
+.member-note {
+  display: block;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
