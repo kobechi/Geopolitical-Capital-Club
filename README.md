@@ -12,25 +12,6 @@ The site introduces the program, explains membership, and presents the club’s 
 
 Built with React, TypeScript, and Vite.
 
-Install dependencies and start the local server:
-
-```bash
-npm install
-npm run dev
-```
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
 ## Project files
 
 - `src/` contains the site’s code and styles.
