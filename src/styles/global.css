@@ -771,6 +771,12 @@
   gap: 1.25rem;
 }
 
+.board-wrapper {
+  position: sticky;
+  top: 94px;
+  align-self: start;
+}
+
 .board-showcase {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
@@ -978,6 +984,10 @@
   .hero-layout,
   .board-grid {
     grid-template-columns: 1fr;
+  }
+
+  .board-wrapper {
+    position: static;
   }
 
   .site-nav {

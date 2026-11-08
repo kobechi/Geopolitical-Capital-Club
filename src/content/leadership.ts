@@ -1,6 +1,6 @@
 import leahPhoto from '../assets/Leah.png'
 import mariamPhoto from '../assets/mariam fixed.png'
-import matthewPhoto from '../assets/Matthew.png'
+import matthewPhoto from '../assets/matthew new.PNG'
 import neelPhoto from '../assets/Neel.png'
 import oskarPhoto from '../assets/Oskar.png'
 import paulPhoto from '../assets/Paul.png'
