@@ -5,7 +5,7 @@ export type BoardPosition = {
   role: string
   name?: string
   bio?: string
-  photo?: { src: string; alt: string; zoom?: number; x?: number; y?: number }
+  photo?: { src: string; alt: string; scale?: number }
   linkedinUrl?: string
 }
 

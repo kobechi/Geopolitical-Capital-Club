@@ -9,7 +9,12 @@
 }
 
 .narrow-shell .page-intro {
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.narrow-shell .page-intro + .section-block {
+  margin-top: 0;
 }
 
 .role-card,

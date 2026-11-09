@@ -543,11 +543,12 @@
 
 .member-photo {
   position: absolute;
-  max-width: none;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 25%;
+  transform-origin: center 25%;
 }
 
 .person-name {
@@ -767,14 +768,8 @@
 
 .board-layout {
   display: grid;
-  grid-template-columns: 1.5fr 0.8fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.25rem;
-}
-
-.board-wrapper {
-  position: sticky;
-  top: 94px;
-  align-self: start;
 }
 
 .board-showcase {
@@ -833,7 +828,7 @@
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 1rem;
-  align-items: center;
+  align-items: stretch;
   min-height: 540px;
   background: rgba(255, 255, 255, 0.28);
   border: 1px solid rgba(93, 38, 50, 0.08);
@@ -856,8 +851,9 @@
 
 .featured-role-card .member-photo-frame {
   width: 100%;
-  height: 460px;
-  min-height: 460px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 5;
   border-radius: 6px;
   margin-bottom: 0;
 }
@@ -865,9 +861,8 @@
 .featured-role-card .role-card-copy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 460px;
-  min-height: 460px;
+  height: 100%;
+  min-height: 0;
 }
 
 .role-card-empty {
@@ -888,6 +883,10 @@
 
 .join-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.join-grid .info-panel > :last-child {
+  margin-top: auto;
 }
 
 .stacked-actions {
@@ -986,8 +985,20 @@
     grid-template-columns: 1fr;
   }
 
-  .board-wrapper {
-    position: static;
+  .featured-role-card {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+
+  .featured-role-card .member-photo-frame {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 2 / 3;
+  }
+
+  .featured-role-card .role-card-copy {
+    height: auto;
+    min-height: 0;
   }
 
   .site-nav {
@@ -1028,6 +1039,27 @@
 @media (max-width: 640px) {
   .page-shell {
     padding-top: 1.25rem;
+  }
+
+  .board-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .board-slide-panel {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .carousel-arrow:first-child {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+  }
+
+  .carousel-arrow:last-child {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
   }
 
   .page-intro,

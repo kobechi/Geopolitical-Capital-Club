@@ -9,12 +9,7 @@ export function RoleCard({ role, featured = false }: { role: BoardPosition; feat
             src={role.photo.src}
             alt={role.photo.alt || role.name || role.role}
             className="member-photo"
-            style={{
-              width: `${(role.photo.zoom ?? 1) * 100}%`,
-              height: `${(role.photo.zoom ?? 1) * 100}%`,
-              left: `${-((role.photo.zoom ?? 1) - 1) * (role.photo.x ?? 50)}%`,
-              top: `${-((role.photo.zoom ?? 1) - 1) * (role.photo.y ?? 0)}%`,
-            }}
+            style={{ transform: `scale(${role.photo.scale ?? 1})` }}
           />
         </div>
       ) : (

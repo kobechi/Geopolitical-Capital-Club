@@ -10,21 +10,20 @@ import type { BoardPosition, TeamLeadGroup } from '../types/content'
 const kobePhoto = new URL('../assets/Kobe.PNG', import.meta.url).href
 
 export const executiveBoard: BoardPosition[] = [
-  // Add each member's bio in the `bio` field below; leave it empty until ready.
   {
     track: 'analyst',
     role: 'Analyst Co-President',
     name: 'Matthew Yang',
-    bio: '',
-    photo: { src: matthewPhoto, alt: 'Matthew Yang', zoom: 1, x: 33, y: 0 },
+    bio: 'Matthew is a sophomore from Canada studying Economics at Boston College. He is the Co-Founder of Geopolitical Capital Club (GCC) and leads the Analyst Track. Outside of GCC, he is involved in PULSE, volunteering as a youth mentor at Roxbury Youth Program. This summer, he is an incoming Sales & Trading Analyst at CIBC Capital Markets. In his free time, Matthew enjoys skiing and sailing.',
+    photo: { src: matthewPhoto, alt: 'Matthew Yang' },
     linkedinUrl: 'https://www.linkedin.com/in/matthewcyang/',
   },
   {
     track: 'studio',
     role: 'Studio Co-President',
     name: 'Kobe Chi',
-    bio: '',
-    photo: { src: kobePhoto, alt: 'Kobe Chi', zoom: 1.05, x: 60, y: 53 },
+    bio: 'Kobe is a sophomore from New York, studying Finance and Computer Science. He is currently founding co-president of GCC and leads the Studio Track. Outside of GCC, they are involved with Entrepreneurs for Social Impact and Carroll Scholars. Last summer, he interned for a consulting startup. Next summer, he plans to intern in wealth management or quant. In his free time, Kobe enjoys reading, basketball, and meeting new people.',
+    photo: { src: kobePhoto, alt: 'Kobe Chi' },
     linkedinUrl: 'https://www.linkedin.com/in/kobechi/',
   },
   {
@@ -32,7 +31,7 @@ export const executiveBoard: BoardPosition[] = [
     role: 'Finance & Venture Analysis',
     name: 'Paul Purev',
     bio: '',
-    photo: { src: paulPhoto, alt: 'Paul Purev', zoom: 2.1, x: 56, y: 27 },
+    photo: { src: paulPhoto, alt: 'Paul Purev', scale: 2.5 },
     linkedinUrl: 'https://www.linkedin.com/in/battushig-paul-purev-851057353/',
   },
   {
@@ -40,7 +39,7 @@ export const executiveBoard: BoardPosition[] = [
     role: 'Operations, Legal & Execution',
     name: 'Rachel Choi',
     bio: '',
-    photo: { src: rachelPhoto, alt: 'Rachel Choi', zoom: 1.4, x: 50, y: 28 },
+    photo: { src: rachelPhoto, alt: 'Rachel Choi' },
     linkedinUrl: 'https://www.linkedin.com/in/rachel-choi-8995a4273/',
   },
   {
@@ -48,7 +47,7 @@ export const executiveBoard: BoardPosition[] = [
     role: 'Geopolitical Intelligence & Strategy',
     name: 'Neel Mascarenhas',
     bio: '',
-    photo: { src: neelPhoto, alt: 'Neel Mascarenhas', zoom: 1.2, x: 37, y: 0 },
+    photo: { src: neelPhoto, alt: 'Neel Mascarenhas' },
     linkedinUrl: 'https://www.linkedin.com/in/neel-mascarenhas/',
   },
   {
@@ -56,7 +55,7 @@ export const executiveBoard: BoardPosition[] = [
     role: 'Product & Technology',
     name: 'Mariam Djaby',
     bio: '',
-    photo: { src: mariamPhoto, alt: 'Mariam Djaby', zoom: 1.3, x: 48, y: 56 },
+    photo: { src: mariamPhoto, alt: 'Mariam Djaby' },
     linkedinUrl: 'https://www.linkedin.com/in/mariam-djaby/',
   },
   {
@@ -64,7 +63,7 @@ export const executiveBoard: BoardPosition[] = [
     role: 'Partnerships & Outreach',
     name: 'Oskar Kowalkowski',
     bio: '',
-    photo: { src: oskarPhoto, alt: 'Oskar Kowalkowski', zoom: 1, x: 40, y: 0 },
+    photo: { src: oskarPhoto, alt: 'Oskar Kowalkowski', scale: 1.2 },
     linkedinUrl: 'https://www.linkedin.com/in/oskar-kowalkowski-a9403a438/',
   },
   {
@@ -72,7 +71,7 @@ export const executiveBoard: BoardPosition[] = [
     role: 'Growth, Brand & Market',
     name: 'Leah Aguilar',
     bio: '',
-    photo: { src: leahPhoto, alt: 'Leah Aguilar', zoom: 1.3, x: 32, y: 5 },
+    photo: { src: leahPhoto, alt: 'Leah Aguilar' },
     linkedinUrl: 'https://www.linkedin.com/in/leah-aguilar-25b4b0339/',
   },
 ]
