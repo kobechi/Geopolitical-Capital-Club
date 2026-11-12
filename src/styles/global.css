@@ -886,13 +886,14 @@
 }
 
 .join-grid .info-panel {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto minmax(calc(2 * 1.05em), auto) minmax(0, 1fr) auto;
 }
 
 .join-grid .info-panel h2 {
   min-height: calc(2 * 1.05em);
   margin-bottom: 0.8rem;
+  font-size: clamp(1.65rem, 2.2vw, 2rem);
 }
 
 .stacked-actions {
@@ -989,6 +990,10 @@
   .hero-layout,
   .board-grid {
     grid-template-columns: 1fr;
+  }
+
+  .join-grid .info-panel h2 {
+    min-height: 0;
   }
 
   .featured-role-card {
