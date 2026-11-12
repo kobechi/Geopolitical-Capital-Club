@@ -890,8 +890,9 @@
   flex-direction: column;
 }
 
-.join-grid .info-panel > :last-child {
-  margin-top: auto;
+.join-grid .info-panel h2 {
+  min-height: calc(2 * 1.05em);
+  margin-bottom: 0.8rem;
 }
 
 .stacked-actions {
