@@ -59,12 +59,16 @@ export function Join() {
           </article>
 
           <article className="info-panel">
-            <p className="eyebrow">Track interest</p>
-            <h2>Analyst and Studio pathways.</h2>
+            <p className="eyebrow">Track application</p>
+            <h2>
+              Analyst and Studio
+              <br />
+              pathways.
+            </h2>
             <p>
               Interested members can express interest in either pathway through the same form. GCC will follow up with more details on fit, track fit, and next steps.
             </p>
-            <JoinLink href={siteLinks.analystInterestForm} label="Track interest form" className="button" />
+            <JoinLink href={siteLinks.analystApplicationForm} label="Track application form" className="button" />
           </article>
         </div>
       </section>

@@ -41,7 +41,7 @@ export function StudioTrack() {
       <section className="container section-block">
         <div className="cta-box">
           <h2>Interest in the Studio Track?</h2>
-          <JoinLink href={siteLinks.studioInterestForm} label="Studio interest form" className="button" />
+          <JoinLink href={siteLinks.studioApplicationForm} label="Studio application form" className="button" />
         </div>
       </section>
     </main>

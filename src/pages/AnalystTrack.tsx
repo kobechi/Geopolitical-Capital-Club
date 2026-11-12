@@ -38,7 +38,7 @@ export function AnalystTrack() {
       <section className="container section-block">
         <div className="cta-box">
           <h2>Interest in the Analyst Track?</h2>
-          <JoinLink href={siteLinks.analystInterestForm} label="Analyst interest form" className="button" />
+          <JoinLink href={siteLinks.analystApplicationForm} label="Analyst application form" className="button" />
         </div>
       </section>
     </main>

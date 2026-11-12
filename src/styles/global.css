@@ -885,6 +885,11 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.join-grid .info-panel {
+  display: flex;
+  flex-direction: column;
+}
+
 .join-grid .info-panel > :last-child {
   margin-top: auto;
 }

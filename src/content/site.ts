@@ -1,7 +1,7 @@
 export type SiteLinks = {
   generalMembershipForm?: string
-  analystInterestForm?: string
-  studioInterestForm?: string
+  analystApplicationForm?: string
+  studioApplicationForm?: string
   calendarUrl?: string
   contactEmail?: string
   linkedin?: string
@@ -12,8 +12,8 @@ export const organizationName = 'Geopolitical Capital Club'
 
 export const siteLinks: SiteLinks = {
   generalMembershipForm: 'https://docs.google.com/forms/d/e/1FAIpQLSdsJGmIyJ3WU-I-NhYvA2f7sXmQ2JUrZAP3ofSA4akUUDYwEQ/viewform?usp=publish-editor',
-  analystInterestForm: 'https://docs.google.com/forms/d/e/1FAIpQLScDBg334h8ACGa1g_SfZC43sNaT_uX0aTFURFqiZYOWPaQEOQ/alreadyresponded',
-  studioInterestForm: 'https://docs.google.com/forms/d/e/1FAIpQLSfnMEzeY6c5-7s6o65WYOT2CDHMOZERibekknN3meZs8F_L_w/viewform',
+  analystApplicationForm: 'https://docs.google.com/forms/d/e/1FAIpQLSfnMEzeY6c5-7s6o65WYOT2CDHMOZERibekknN3meZs8F_L_w/viewform?usp=header',
+  studioApplicationForm: 'https://docs.google.com/forms/d/e/1FAIpQLSfnMEzeY6c5-7s6o65WYOT2CDHMOZERibekknN3meZs8F_L_w/viewform?usp=header',
   calendarUrl: 'https://calendar.google.com/calendar/embed?src=geopoliticalcapitalclub%40gmail.com&ctz=America%2FNew_York&mode=AGENDA&color=%237D0F2D',
   contactEmail: 'geopoliticalcapitalclub@gmail.com',
   linkedin: 'https://www.linkedin.com/company/geopoliticalcapital/?viewAsMember=true',
